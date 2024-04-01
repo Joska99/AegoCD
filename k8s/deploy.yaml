@@ -1,1 +1,32 @@
-# create manifest file
+# TODO: apply best practicies
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stonks-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stonks-pod
+  template:
+    metadata:
+      labels:
+        app: stonks-pod
+    spec:
+      containers:
+        - name: stinks-coontainer
+          image: joska99/stonks:13
+          ports:
+            - containerPort: 8080
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: stonks-pod-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: stonks
+  ports:
+    - port: 8080 # Default port for image
