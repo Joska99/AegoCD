@@ -7,6 +7,11 @@ Template repository for ArgoCD</br>
 
 https://argo-cd.readthedocs.io/en/stable/getting_started/
 
+## Set up
+
+1. Set up script in "argocd-setup" directory 
+2. Script apply official manifest to "argocd" namespace
+
 ## Login
 
 - User Name: Admin
