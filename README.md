@@ -11,6 +11,9 @@ https://argo-cd.readthedocs.io/en/stable/getting_started/
 
 1. Set up script in "argocd-setup" directory 
 2. Script apply official manifest to "argocd" namespace
+```bash
+bash ./argocd-setup/set_up.sh
+```
 
 ## Login
 
