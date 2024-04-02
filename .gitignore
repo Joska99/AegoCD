@@ -1,7 +1,12 @@
 *
 
 !.gitignore
+
+# Kubernetes
 !*.yaml
 !*.yml
 !*.sh
+
+# Helm
 !helmChart/
+!helmChart/*
