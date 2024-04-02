@@ -1,6 +1,8 @@
 *
 
 !.gitignore
+!*.md
+!*.svg
 
 # Kubernetes
 !*.yaml
@@ -10,3 +12,6 @@
 # Helm
 !helmChart/
 !helmChart/*
+!helmChart/templates/tests
+!_helpers.tpl
+!NOTES.txt
